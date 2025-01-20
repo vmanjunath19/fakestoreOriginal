@@ -212,7 +212,13 @@ function stringCheck(string,subString){
     return subStringWords.every(element => stringWords.includes(element));
 }
 
+function neutralizeDefaultEvent(){
+    document.getElementById("searchButon").addEventListener("click", function(event){
+    event.preventDefault()});
+}
+
 
 // Call the async function
 fetchAllProducts();
 fetchAllCatagories()
+neutralizeDefaultEvent()
