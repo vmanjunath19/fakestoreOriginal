@@ -20,8 +20,8 @@ async function fetchAllProducts() {
             let description = post.description
             let title  = post.title
             
-            title = truncateString(title, 52)
-            description = truncateString(description, 250)
+            title = truncateString(title, 40)
+            description = truncateString(description, 150)
 
             postElement.innerHTML = `
                 <div class="card">
@@ -90,8 +90,8 @@ async function searchProduct() {
                 let description = post.description
                 let title  = post.title
 
-                title = truncateString(title, 52)
-                description = truncateString(description, 250)
+                title = truncateString(title, 40)
+                description = truncateString(description, 150)
 
                 postElement.innerHTML = `
                     <div class="card">
@@ -167,8 +167,8 @@ async function fetchItemCatagoryWise(catagory){
             let description = post.description
             let title  = post.title
             
-            title = truncateString(title, 52)
-            description = truncateString(description, 250)
+            title = truncateString(title, 40)
+            description = truncateString(description, 150)
 
             postElement.innerHTML = `
                 <div class="card">
